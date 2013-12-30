@@ -1,0 +1,38 @@
+diff --git a/3.13.0-rc6-bone2/am335x-bone.dts b/3.13.0-rc6-bone2/am335x-bone.dts
+index 80ed50d..a879d8c 100644
+--- a/3.13.0-rc6-bone2/am335x-bone.dts
++++ b/3.13.0-rc6-bone2/am335x-bone.dts
+@@ -285,10 +285,10 @@
+ 			clock-frequency = <0x2dc6c00>;
+ 			reg = <0x481a8000 0x2000>;
+ 			interrupts = <0x2d>;
+-			status = "disabled";
+-			//status = "okay";
+-			//pinctrl-names = "default";
+-			//pinctrl-0 = <0x7>;
++			//status = "disabled";
++			status = "okay";
++			pinctrl-names = "default";
++			pinctrl-0 = <0x7>;
+ 		};
+ 
+ 		serial@481aa000 {
+diff --git a/3.13.0-rc6-bone2/am335x-boneblack.dts b/3.13.0-rc6-bone2/am335x-boneblack.dts
+index a361bb4..b31e0b1 100644
+--- a/3.13.0-rc6-bone2/am335x-boneblack.dts
++++ b/3.13.0-rc6-bone2/am335x-boneblack.dts
+@@ -299,10 +299,10 @@
+ 			clock-frequency = <0x2dc6c00>;
+ 			reg = <0x481a8000 0x2000>;
+ 			interrupts = <0x2d>;
+-			status = "disabled";
+-			//status = "okay";
+-			//pinctrl-names = "default";
+-			//pinctrl-0 = <0x7>;
++			//status = "disabled";
++			status = "okay";
++			pinctrl-names = "default";
++			pinctrl-0 = <0x7>;
+ 		};
+ 
+ 		serial@481aa000 {
