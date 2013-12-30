@@ -1,0 +1,4 @@
+rscm
+====
+
+Really Simple CapeManager
