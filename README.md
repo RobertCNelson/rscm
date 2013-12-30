@@ -11,22 +11,22 @@ Serial Capes:
 
 Enable tty01: (BBB & BBW)
 ```
-patch -p1 < 3.13.0-rc6-bone2/patches/enable-ttyO1.diff
+patch -p1 < ./3.13.0-rc6-bone2/patches/enable-ttyO1.diff
 ```
 
 Enable tty02: (BBB & BBW)
 ```
-patch -p1 < 3.13.0-rc6-bone2/patches/enable-ttyO2.diff
+patch -p1 < ./3.13.0-rc6-bone2/patches/enable-ttyO2.diff
 ```
 
 Enable tty04: (BBB & BBW)
 ```
-patch -p1 < 3.13.0-rc6-bone2/patches/enable-ttyO4.diff
+patch -p1 < ./3.13.0-rc6-bone2/patches/enable-ttyO4.diff
 ```
 
 Enable tty05: (BBW)
 ```
-patch -p1 < 3.13.0-rc6-bone2/patches/enable-ttyO5.diff
+patch -p1 < ./3.13.0-rc6-bone2/patches/enable-ttyO5.diff
 ```
 
 Build:
