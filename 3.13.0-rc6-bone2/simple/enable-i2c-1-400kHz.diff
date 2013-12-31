@@ -1,0 +1,42 @@
+diff --git a/3.13.0-rc6-bone2/am335x-bone.dts b/3.13.0-rc6-bone2/am335x-bone.dts
+index d28588a..ee2c8ca 100644
+--- a/3.13.0-rc6-bone2/am335x-bone.dts
++++ b/3.13.0-rc6-bone2/am335x-bone.dts
+@@ -399,11 +399,11 @@
+ 			ti,hwmods = "i2c2";
+ 			reg = <0x4802a000 0x1000>;
+ 			interrupts = <0x47>;
+-			status = "disabled";
+-			//status = "okay";
+-			//pinctrl-names = "default";
+-			//pinctrl-0 = <0xa>;
+-			//clock-frequency = <0x186a0>;
++			//status = "disabled";
++			status = "okay";
++			pinctrl-names = "default";
++			pinctrl-0 = <0xa>;
++			clock-frequency = <0x61a80>;
+ 		};
+ 
+ 		i2c@4819c000 {
+diff --git a/3.13.0-rc6-bone2/am335x-boneblack.dts b/3.13.0-rc6-bone2/am335x-boneblack.dts
+index cd74d03..491129b 100644
+--- a/3.13.0-rc6-bone2/am335x-boneblack.dts
++++ b/3.13.0-rc6-bone2/am335x-boneblack.dts
+@@ -413,11 +413,11 @@
+ 			ti,hwmods = "i2c2";
+ 			reg = <0x4802a000 0x1000>;
+ 			interrupts = <0x47>;
+-			status = "disabled";
+-			//status = "okay";
+-			//pinctrl-names = "default";
+-			//pinctrl-0 = <0xa>;
+-			//clock-frequency = <0x186a0>;
++			//status = "disabled";
++			status = "okay";
++			pinctrl-names = "default";
++			pinctrl-0 = <0xa>;
++			clock-frequency = <0x61a80>;
+ 		};
+ 
+ 		i2c@4819c000 {

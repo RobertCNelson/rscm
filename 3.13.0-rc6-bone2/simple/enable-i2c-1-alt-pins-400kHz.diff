@@ -1,0 +1,72 @@
+diff --git a/3.13.0-rc6-bone2/am335x-bone.dts b/3.13.0-rc6-bone2/am335x-bone.dts
+index d28588a..9724997 100644
+--- a/3.13.0-rc6-bone2/am335x-bone.dts
++++ b/3.13.0-rc6-bone2/am335x-bone.dts
+@@ -88,12 +88,12 @@
+ 
+ 		pinmux_i2c1_pins {
+ 			pinctrl-single,pins = <0x158 0x72 0x15c 0x72>;
+-			linux,phandle = <0xa>;
+-			phandle = <0xa>;
+ 		};
+ 
+ 		pinmux_i2c1a_pins {
+ 			pinctrl-single,pins = <0x180 0x73 0x184 0x73>;
++			linux,phandle = <0xa>;
++			phandle = <0xa>;
+ 		};
+ 
+ 		pinmux_uart0_pins {
+@@ -399,11 +399,11 @@
+ 			ti,hwmods = "i2c2";
+ 			reg = <0x4802a000 0x1000>;
+ 			interrupts = <0x47>;
+-			status = "disabled";
+-			//status = "okay";
+-			//pinctrl-names = "default";
+-			//pinctrl-0 = <0xa>;
+-			//clock-frequency = <0x186a0>;
++			//status = "disabled";
++			status = "okay";
++			pinctrl-names = "default";
++			pinctrl-0 = <0xa>;
++			clock-frequency = <0x61a80>;
+ 		};
+ 
+ 		i2c@4819c000 {
+diff --git a/3.13.0-rc6-bone2/am335x-boneblack.dts b/3.13.0-rc6-bone2/am335x-boneblack.dts
+index cd74d03..a6a4d70 100644
+--- a/3.13.0-rc6-bone2/am335x-boneblack.dts
++++ b/3.13.0-rc6-bone2/am335x-boneblack.dts
+@@ -88,12 +88,12 @@
+ 
+ 		pinmux_i2c1_pins {
+ 			pinctrl-single,pins = <0x158 0x72 0x15c 0x72>;
+-			linux,phandle = <0xa>;
+-			phandle = <0xa>;
+ 		};
+ 
+ 		pinmux_i2c1a_pins {
+ 			pinctrl-single,pins = <0x180 0x73 0x184 0x73>;
++			linux,phandle = <0xa>;
++			phandle = <0xa>;
+ 		};
+ 
+ 		pinmux_uart0_pins {
+@@ -413,11 +413,11 @@
+ 			ti,hwmods = "i2c2";
+ 			reg = <0x4802a000 0x1000>;
+ 			interrupts = <0x47>;
+-			status = "disabled";
+-			//status = "okay";
+-			//pinctrl-names = "default";
+-			//pinctrl-0 = <0xa>;
+-			//clock-frequency = <0x186a0>;
++			//status = "disabled";
++			status = "okay";
++			pinctrl-names = "default";
++			pinctrl-0 = <0xa>;
++			clock-frequency = <0x61a80>;
+ 		};
+ 
+ 		i2c@4819c000 {

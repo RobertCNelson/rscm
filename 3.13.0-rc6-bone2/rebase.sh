@@ -15,18 +15,18 @@ rebase_one_dep () {
 
 patch_file="simple/enable-ttyO1.diff"
 rebase
-
 patch_file="simple/enable-ttyO2.diff"
 rebase
-
 patch_file="simple/enable-ttyO4.diff"
 rebase
-
 patch_file="simple/enable-ttyO5.diff"
 rebase
-
 patch_file="simple/enable-i2c-1.diff"
 rebase
-
 patch_file="simple/enable-i2c-1-alt-pins.diff"
 rebase
+patch_file="simple/enable-i2c-1-400kHz.diff"
+rebase
+patch_file="simple/enable-i2c-1-alt-pins-400kHz.diff"
+rebase
+
