@@ -1,7 +1,7 @@
-diff --git a/3.13.0-rc6-bone2/am335x-bone.dts b/3.13.0-rc6-bone2/am335x-bone.dts
+diff --git a/3.13-bone/am335x-bone.dts b/3.13-bone/am335x-bone.dts
 index 92ab34f..532aadb 100644
---- a/3.13.0-rc6-bone2/am335x-bone.dts
-+++ b/3.13.0-rc6-bone2/am335x-bone.dts
+--- a/3.13-bone/am335x-bone.dts
++++ b/3.13-bone/am335x-bone.dts
 @@ -414,11 +414,11 @@
  			ti,hwmods = "i2c2";
  			reg = <0x4802a000 0x1000>;
@@ -19,10 +19,10 @@ index 92ab34f..532aadb 100644
  		};
  
  		i2c@4819c000 {
-diff --git a/3.13.0-rc6-bone2/am335x-boneblack.dts b/3.13.0-rc6-bone2/am335x-boneblack.dts
+diff --git a/3.13-bone/am335x-boneblack.dts b/3.13-bone/am335x-boneblack.dts
 index f0bbc03..0ee4b63 100644
---- a/3.13.0-rc6-bone2/am335x-boneblack.dts
-+++ b/3.13.0-rc6-bone2/am335x-boneblack.dts
+--- a/3.13-bone/am335x-boneblack.dts
++++ b/3.13-bone/am335x-boneblack.dts
 @@ -428,11 +428,11 @@
  			ti,hwmods = "i2c2";
  			reg = <0x4802a000 0x1000>;
