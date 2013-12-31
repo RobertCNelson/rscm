@@ -885,7 +885,7 @@
 			interrupt-parent = <0x1>;
 			interrupts = <0x10>;
 			ti,hwmods = "adc_tsc";
-			status = "disabled";
+			status = "okay";
 
 			tsc {
 				compatible = "ti,am3359-tsc";
@@ -894,6 +894,7 @@
 			adc {
 				#io-channel-cells = <0x1>;
 				compatible = "ti,am3359-adc";
+				ti,adc-channels = <0x4 0x5 0x6>;
 			};
 		};
 

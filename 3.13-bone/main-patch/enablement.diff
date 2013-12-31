@@ -1,5 +1,5 @@
 diff --git a/arch/arm/boot/dts/am335x-bone-common.dtsi b/arch/arm/boot/dts/am335x-bone-common.dtsi
-index 80fdb56..b812a33 100644
+index a887dfd..22e3cea 100644
 --- a/arch/arm/boot/dts/am335x-bone-common.dtsi
 +++ b/arch/arm/boot/dts/am335x-bone-common.dtsi
 @@ -84,6 +84,20 @@
@@ -51,23 +51,7 @@ index 80fdb56..b812a33 100644
  	clkout2_pin: pinmux_clkout2_pin {
  		pinctrl-single,pins = <
  			0x1b4 (PIN_OUTPUT_PULLDOWN | MUX_MODE3)	/* xdma_event_intr1.clkout2 */
-@@ -185,6 +220,15 @@
- 			0x1c (PIN_INPUT_PULLUP | MUX_MODE1) /* gpmc_ad7.mmc1_dat7 */
- 		>;
- 	};
-+
-+	bb_spi0_pins: pinmux_bb_spi0_pins {
-+		pinctrl-single,pins = <
-+			0x150 0x30	/* spi0_sclk.spi0_sclk, INPUT_PULLUP | MODE0 */
-+			0x154 0x30	/* spi0_d0.spi0_d0, INPUT_PULLUP | MODE0 */
-+			0x158 0x10	/* spi0_d1.spi0_d1, OUTPUT_PULLUP | MODE0 */
-+			0x15c 0x10	/* spi0_cs0.spi0_cs0, OUTPUT_PULLUP | MODE0 */
-+		>;
-+	};
- };
- 
- &uart0 {
-@@ -201,6 +245,27 @@
+@@ -210,6 +245,27 @@
  	status = "okay";
  };
  
@@ -95,7 +79,7 @@ index 80fdb56..b812a33 100644
  &usb {
  	status = "okay";
  
-@@ -247,6 +312,16 @@
+@@ -256,6 +312,16 @@
  	};
  };
  
@@ -112,26 +96,3 @@ index 80fdb56..b812a33 100644
  &i2c2 {
  	status = "okay";
  	pinctrl-names = "default";
-@@ -350,3 +425,22 @@
- 	cd-gpios = <&gpio0 6 GPIO_ACTIVE_HIGH>;
- 	cd-inverted;
- };
-+
-+//&spi0 {
-+//	pinctrl-names = "default";
-+//	pinctrl-0 = <&bb_spi0_pins>;
-+//	status = "okay";
-+
-+//	spidev0: spi@0 {
-+//		compatible = "spidev";
-+//		reg = <0>;
-+//		spi-max-frequency = <16000000>;
-+//		spi-cpha;
-+//	};
-+//
-+//	spidev1: spi@1 {
-+//		compatible = "spidev";
-+//		reg = <1>;
-+//		spi-max-frequency = <16000000>;
-+//	};
-+//}
