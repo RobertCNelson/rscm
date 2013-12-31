@@ -7,24 +7,38 @@ git clone git://github.com/RobertCNelson/rscm.git
 cd ./rscm/
 ```
 
-Serial Capes:
+i2c-1 config 1: (BBB & BBW)
+Pins: P9.18, P0.17
+```
+patch -p1 < ./3.13.0-rc6-bone2/simple/enable-i2c-1.diff
+```
 
-Enable tty01: (BBB & BBW)
+i2c-1 config 2: (BBB & BBW)
+Pins: P9.26, P9.24
+```
+patch -p1 < ./3.13.0-rc6-bone2/simple/enable-i2c-1-alt-pins.diff
+```
+
+ttyO1: (BBB & BBW)
+Pins: P9.24, P9.26
 ```
 patch -p1 < ./3.13.0-rc6-bone2/simple/enable-ttyO1.diff
 ```
 
-Enable tty02: (BBB & BBW)
+ttyO2: (BBB & BBW)
+Pins: P9.21, P9.22
 ```
 patch -p1 < ./3.13.0-rc6-bone2/simple/enable-ttyO2.diff
 ```
 
-Enable tty04: (BBB & BBW)
+ttyO4: (BBB & BBW)
+Pins: P9.13, P9.11
 ```
 patch -p1 < ./3.13.0-rc6-bone2/simple/enable-ttyO4.diff
 ```
 
-Enable tty05: (BBW)
+ttyO5: (BBW)
+Pins: P8.37, P8.38
 ```
 patch -p1 < ./3.13.0-rc6-bone2/simple/enable-ttyO5.diff
 ```
