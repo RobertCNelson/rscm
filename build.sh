@@ -27,8 +27,12 @@ fi
 
 DIR=$PWD
 
-rm /boot/uboot/dtbs/am335x-bone.dtb || true
-rm /boot/uboot/dtbs/am335x-boneblack.dtb || true
+if [ -f  /boot/uboot/dtbs/am335x-bone.dtb ] ; then
+	rm -f /boot/uboot/dtbs/am335x-bone.dtb || true
+fi
+if [ -f /boot/uboot/dtbs/am335x-boneblack.dtb ] ; then
+	rm -f /boot/uboot/dtbs/am335x-boneblack.dtb || true
+fi
 
 dtc -I dts -O dtb ${DIR}/3.13-bone/am335x-bone.dts > /boot/uboot/dtbs/am335x-bone.dtb
 dtc -I dts -O dtb ${DIR}/3.13-bone/am335x-boneblack.dts > /boot/uboot/dtbs/am335x-boneblack.dtb
