@@ -1,8 +1,8 @@
 diff --git a/3.13-bone/am335x-bone.dts b/3.13-bone/am335x-bone.dts
-index baeb212..b0e6229 100644
+index d8458a6..afd023e 100644
 --- a/3.13-bone/am335x-bone.dts
 +++ b/3.13-bone/am335x-bone.dts
-@@ -413,11 +413,11 @@
+@@ -415,11 +415,11 @@
  			ti,hwmods = "i2c2";
  			reg = <0x4802a000 0x1000>;
  			interrupts = <0x47>;
@@ -20,10 +20,10 @@ index baeb212..b0e6229 100644
  
  		i2c@4819c000 {
 diff --git a/3.13-bone/am335x-boneblack.dts b/3.13-bone/am335x-boneblack.dts
-index 70c6f16..a8a1d8f 100644
+index 2f9a3d1..21d0ded 100644
 --- a/3.13-bone/am335x-boneblack.dts
 +++ b/3.13-bone/am335x-boneblack.dts
-@@ -427,11 +427,11 @@
+@@ -429,11 +429,11 @@
  			ti,hwmods = "i2c2";
  			reg = <0x4802a000 0x1000>;
  			interrupts = <0x47>;

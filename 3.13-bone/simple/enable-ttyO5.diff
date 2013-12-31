@@ -1,8 +1,8 @@
 diff --git a/3.13-bone/am335x-bone.dts b/3.13-bone/am335x-bone.dts
-index baeb212..97e372d 100644
+index d8458a6..55fa217 100644
 --- a/3.13-bone/am335x-bone.dts
 +++ b/3.13-bone/am335x-bone.dts
-@@ -316,10 +316,10 @@
+@@ -318,10 +318,10 @@
  			clock-frequency = <0x2dc6c00>;
  			reg = <0x481aa000 0x2000>;
  			interrupts = <0x2e>;
