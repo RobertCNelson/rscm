@@ -1,3 +1,4 @@
-i2c-1:
+i2c-1: (i2cdetect -r -y 1)
 100 kHz: 0x186a0
 400 kHz: 0x61a80
+
