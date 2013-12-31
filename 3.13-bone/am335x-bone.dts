@@ -109,7 +109,7 @@
 		};
 
 		pinmux_uart1_pins {
-			pinctrl-single,pins = <0x184 0x20 0x180 0x20>;
+			pinctrl-single,pins = <0x180 0x30 0x184 0x0>;
 			linux,phandle = <0x5>;
 			phandle = <0x5>;
 		};
@@ -272,10 +272,9 @@
 			clock-frequency = <0x2dc6c00>;
 			reg = <0x48022000 0x2000>;
 			interrupts = <0x49>;
-			status = "disabled";
-			//status = "okay";
-			//pinctrl-names = "default";
-			//pinctrl-0 = <0x5>;
+			status = "okay";
+			pinctrl-names = "default";
+			pinctrl-0 = <0x5>;
 		};
 
 		serial@48024000 {
