@@ -8,7 +8,7 @@ cd ./rscm/
 ```
 
 i2c-1 config 1: (BBB & BBW)
-Pins: P9.18, P0.17
+Pins: P9.18, P9.17
 ```
 patch -p1 < ./3.13.0-rc6-bone2/simple/enable-i2c-1.diff
 ```
@@ -20,7 +20,7 @@ patch -p1 < ./3.13.0-rc6-bone2/simple/enable-i2c-1-alt-pins.diff
 ```
 
 i2c-1 config 1 400 kHz: (BBB & BBW)
-Pins: P9.18, P0.17
+Pins: P9.18, P9.17
 ```
 patch -p1 < ./3.13.0-rc6-bone2/simple/enable-i2c-1-400kHz.diff
 ```
