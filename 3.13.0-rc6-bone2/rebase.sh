@@ -18,5 +18,5 @@ rebase
 patch_file="simple/enable-ttyO5.diff"
 rebase
 
-patch_file="simple/enable-i2c.diff"
+patch_file="simple/enable-i2c-1.diff"
 rebase
