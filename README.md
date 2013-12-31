@@ -31,10 +31,10 @@ Pins: P9.26, P9.24
 patch -p1 < ./3.13-bone/simple/enable-i2c-1-alt-pins-400kHz.diff
 ```
 
-ttyO1: (BBB & BBW)
+ttyO1: (BBB & BBW) (enabled by default: http://elinux.org/Basic_Proto_Cape )
 Pins: P9.24, P9.26
 ```
-patch -p1 < ./3.13-bone/simple/enable-ttyO1.diff
+patch -p1 < ./3.13-bone/simple/disable-ttyO1.diff
 ```
 
 ttyO2: (BBB & BBW)
