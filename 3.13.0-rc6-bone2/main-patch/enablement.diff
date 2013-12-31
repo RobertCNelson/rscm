@@ -1,8 +1,29 @@
 diff --git a/arch/arm/boot/dts/am335x-bone-common.dtsi b/arch/arm/boot/dts/am335x-bone-common.dtsi
-index e3f27ec..b6d6e6d 100644
+index e3f27ec..e610d988 100644
 --- a/arch/arm/boot/dts/am335x-bone-common.dtsi
 +++ b/arch/arm/boot/dts/am335x-bone-common.dtsi
-@@ -91,6 +91,34 @@
+@@ -84,6 +84,20 @@
+ 		>;
+ 	};
+ 
++	i2c1_pins: pinmux_i2c1_pins {
++		pinctrl-single,pins = <
++			0x158 0x72	/* spi0_d1.i2c1_sda, SLEWCTRL_SLOW | INPUT_PULLUP | MODE2 */
++			0x15c 0x72	/* spi0_cs0.i2c1_scl, SLEWCTRL_SLOW | INPUT_PULLUP | MODE2 */
++		>;
++	};
++
++	i2c1a_pins: pinmux_i2c1a_pins {
++		pinctrl-single,pins = <
++			0x180 0x73	/* uart1_rxd.i2c1_sda, SLEWCTRL_SLOW | INPUT_PULLUP | MODE3 */
++			0x184 0x73	/* uart1_txdi2c1_scl, SLEWCTRL_SLOW | INPUT_PULLUP | MODE3 */
++		>;
++	};
++
+ 	uart0_pins: pinmux_uart0_pins {
+ 		pinctrl-single,pins = <
+ 			0x170 (PIN_INPUT_PULLUP | MUX_MODE0)	/* uart0_rxd.uart0_rxd */
+@@ -91,6 +105,34 @@
  		>;
  	};
  
@@ -37,7 +58,7 @@ index e3f27ec..b6d6e6d 100644
  	clkout2_pin: pinmux_clkout2_pin {
  		pinctrl-single,pins = <
  			0x1b4 (PIN_OUTPUT_PULLDOWN | MUX_MODE3)	/* xdma_event_intr1.clkout2 */
-@@ -180,6 +208,34 @@
+@@ -180,6 +222,34 @@
  	status = "okay";
  };
  
@@ -72,3 +93,20 @@ index e3f27ec..b6d6e6d 100644
  &usb {
  	status = "okay";
  
+@@ -222,6 +292,16 @@
+ 
+ };
+ 
++&i2c1 {
++	pinctrl-names = "default";
++	pinctrl-0 = <&i2c1_pins>;
++	//pinctrl-0 = <&i2c1a_pins>;
++
++	status = "okay";
++	clock-frequency = <100000>;
++	//clock-frequency = <400000>;
++};
++
+ /include/ "tps65217.dtsi"
+ 
+ &tps {
