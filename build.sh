@@ -30,8 +30,8 @@ DIR=$PWD
 rm /boot/uboot/dtbs/am335x-bone.dtb || true
 rm /boot/uboot/dtbs/am335x-boneblack.dtb || true
 
-dtc -I dts -O dtb ${DIR}/3.13.0-rc6-bone2/am335x-bone.dts > /boot/uboot/dtbs/am335x-bone.dtb
-dtc -I dts -O dtb ${DIR}/3.13.0-rc6-bone2/am335x-boneblack.dts > /boot/uboot/dtbs/am335x-boneblack.dtb
+dtc -I dts -O dtb ${DIR}/3.13.0-bone/am335x-bone.dts > /boot/uboot/dtbs/am335x-bone.dtb
+dtc -I dts -O dtb ${DIR}/3.13.0-bone/am335x-boneblack.dts > /boot/uboot/dtbs/am335x-boneblack.dtb
 
 echo "done"
 
