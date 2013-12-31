@@ -29,6 +29,4 @@ patch_file="simple/enable-i2c-1-400kHz.diff"
 rebase
 patch_file="simple/enable-i2c-1-alt-pins-400kHz.diff"
 rebase
-patch_file="simple/disable-spidev1.diff"
-rebase
 

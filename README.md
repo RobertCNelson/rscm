@@ -55,12 +55,6 @@ Pins: P8.37, P8.38
 patch -p1 < ./3.13-bone/simple/enable-ttyO5.diff
 ```
 
-spidev1: (BBB & BBW) (enabled by default: http://elinux.org/Basic_Proto_Cape )
-Pins: P9.17, P9.18, P9.21, P9.22
-```
-patch -p1 < ./3.13-bone/simple/disable-spidev1.diff
-```
-
 Build:
 ```
 sudo ./build.sh ; sudo reboot
