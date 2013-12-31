@@ -1,8 +1,8 @@
 diff --git a/3.13.0-rc6-bone2/am335x-bone.dts b/3.13.0-rc6-bone2/am335x-bone.dts
-index 408ac5c..16b162c 100644
+index 80ed50d..110c75e 100644
 --- a/3.13.0-rc6-bone2/am335x-bone.dts
 +++ b/3.13.0-rc6-bone2/am335x-bone.dts
-@@ -240,10 +240,10 @@
+@@ -252,10 +252,10 @@
  			clock-frequency = <0x2dc6c00>;
  			reg = <0x48022000 0x2000>;
  			interrupts = <0x49>;
@@ -18,10 +18,10 @@ index 408ac5c..16b162c 100644
  
  		serial@48024000 {
 diff --git a/3.13.0-rc6-bone2/am335x-boneblack.dts b/3.13.0-rc6-bone2/am335x-boneblack.dts
-index 47ce7ae..a528cfd 100644
+index a361bb4..70421d0 100644
 --- a/3.13.0-rc6-bone2/am335x-boneblack.dts
 +++ b/3.13.0-rc6-bone2/am335x-boneblack.dts
-@@ -254,10 +254,10 @@
+@@ -266,10 +266,10 @@
  			clock-frequency = <0x2dc6c00>;
  			reg = <0x48022000 0x2000>;
  			interrupts = <0x49>;
