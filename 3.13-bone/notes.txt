@@ -1,3 +1,7 @@
+ttyO1:
+login:
+/sbin/getty -L ttyO1 115200 vt102 &>/tmp/ttyO1.log &
+
 i2c-1: (i2cdetect -r -y 1)
 100 kHz: 0x186a0
 400 kHz: 0x61a80
