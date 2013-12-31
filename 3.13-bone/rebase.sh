@@ -13,8 +13,8 @@ rebase_one_dep () {
 	patch -p2 -R < ./${patch_file}
 }
 
-patch_file="simple/enable-ttyO1.diff"
-rebase
+#patch_file="simple/enable-ttyO1.diff"
+#rebase
 patch_file="simple/enable-ttyO2.diff"
 rebase
 patch_file="simple/enable-ttyO4.diff"
