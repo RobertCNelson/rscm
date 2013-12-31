@@ -1,5 +1,5 @@
 diff --git a/3.13-bone/am335x-bone.dts b/3.13-bone/am335x-bone.dts
-index d8458a6..55fa217 100644
+index 0c43800..9ba862f 100644
 --- a/3.13-bone/am335x-bone.dts
 +++ b/3.13-bone/am335x-bone.dts
 @@ -318,10 +318,10 @@

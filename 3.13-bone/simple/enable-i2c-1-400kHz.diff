@@ -1,5 +1,5 @@
 diff --git a/3.13-bone/am335x-bone.dts b/3.13-bone/am335x-bone.dts
-index d8458a6..afd023e 100644
+index 0c43800..f9cf2ff 100644
 --- a/3.13-bone/am335x-bone.dts
 +++ b/3.13-bone/am335x-bone.dts
 @@ -415,11 +415,11 @@
@@ -20,7 +20,7 @@ index d8458a6..afd023e 100644
  
  		i2c@4819c000 {
 diff --git a/3.13-bone/am335x-boneblack.dts b/3.13-bone/am335x-boneblack.dts
-index 2f9a3d1..21d0ded 100644
+index 582ba1d..6e93d7c 100644
 --- a/3.13-bone/am335x-boneblack.dts
 +++ b/3.13-bone/am335x-boneblack.dts
 @@ -429,11 +429,11 @@

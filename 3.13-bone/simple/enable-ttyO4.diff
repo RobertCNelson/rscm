@@ -1,5 +1,5 @@
 diff --git a/3.13-bone/am335x-bone.dts b/3.13-bone/am335x-bone.dts
-index d8458a6..fa73fa5 100644
+index 0c43800..f78a5f0 100644
 --- a/3.13-bone/am335x-bone.dts
 +++ b/3.13-bone/am335x-bone.dts
 @@ -306,10 +306,10 @@
@@ -18,7 +18,7 @@ index d8458a6..fa73fa5 100644
  
  		serial@481aa000 {
 diff --git a/3.13-bone/am335x-boneblack.dts b/3.13-bone/am335x-boneblack.dts
-index 2f9a3d1..aea1643 100644
+index 582ba1d..678f485 100644
 --- a/3.13-bone/am335x-boneblack.dts
 +++ b/3.13-bone/am335x-boneblack.dts
 @@ -320,10 +320,10 @@
