@@ -1,5 +1,5 @@
 diff --git a/arch/arm/boot/dts/am335x-bone-common.dtsi b/arch/arm/boot/dts/am335x-bone-common.dtsi
-index a887dfd..22e3cea 100644
+index f85cabc..0066594 100644
 --- a/arch/arm/boot/dts/am335x-bone-common.dtsi
 +++ b/arch/arm/boot/dts/am335x-bone-common.dtsi
 @@ -84,6 +84,20 @@
@@ -51,7 +51,7 @@ index a887dfd..22e3cea 100644
  	clkout2_pin: pinmux_clkout2_pin {
  		pinctrl-single,pins = <
  			0x1b4 (PIN_OUTPUT_PULLDOWN | MUX_MODE3)	/* xdma_event_intr1.clkout2 */
-@@ -210,6 +245,27 @@
+@@ -228,6 +263,27 @@
  	status = "okay";
  };
  
@@ -79,7 +79,7 @@ index a887dfd..22e3cea 100644
  &usb {
  	status = "okay";
  
-@@ -256,6 +312,16 @@
+@@ -274,6 +330,16 @@
  	};
  };
  
