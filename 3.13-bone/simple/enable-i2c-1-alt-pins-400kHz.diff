@@ -1,5 +1,5 @@
 diff --git a/3.13-bone/am335x-bone.dts b/3.13-bone/am335x-bone.dts
-index 0c43800..d807916 100644
+index 8dc0222..d7df39b 100644
 --- a/3.13-bone/am335x-bone.dts
 +++ b/3.13-bone/am335x-bone.dts
 @@ -88,12 +88,12 @@
@@ -17,7 +17,7 @@ index 0c43800..d807916 100644
  		};
  
  		pinmux_i2c2_pins {
-@@ -415,11 +415,11 @@
+@@ -433,11 +433,11 @@
  			ti,hwmods = "i2c2";
  			reg = <0x4802a000 0x1000>;
  			interrupts = <0x47>;
@@ -35,7 +35,7 @@ index 0c43800..d807916 100644
  
  		i2c@4819c000 {
 diff --git a/3.13-bone/am335x-boneblack.dts b/3.13-bone/am335x-boneblack.dts
-index 582ba1d..39eebce 100644
+index 719bb6e..c15714f 100644
 --- a/3.13-bone/am335x-boneblack.dts
 +++ b/3.13-bone/am335x-boneblack.dts
 @@ -88,12 +88,12 @@
@@ -53,7 +53,7 @@ index 582ba1d..39eebce 100644
  		};
  
  		pinmux_i2c2_pins {
-@@ -429,11 +429,11 @@
+@@ -447,11 +447,11 @@
  			ti,hwmods = "i2c2";
  			reg = <0x4802a000 0x1000>;
  			interrupts = <0x47>;
